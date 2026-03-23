@@ -1,0 +1,469 @@
+{
+  "utc_note": "UTC times assume standard time (no DST adjustments).",
+  "exchanges": [
+    {
+      "rank": 1,
+      "name": "NYSE",
+      "country": "USA",
+      "local_timezone": "America/New_York",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:30",
+          "local_close": "16:00",
+          "utc_open_standard": "14:30",
+          "utc_close_standard": "21:00"
+        }
+      ],
+      "city": "New York"
+    },
+    {
+      "rank": 2,
+      "name": "Nasdaq",
+      "country": "USA",
+      "local_timezone": "America/New_York",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:30",
+          "local_close": "16:00",
+          "utc_open_standard": "14:30",
+          "utc_close_standard": "21:00"
+        }
+      ],
+      "city": "New York"
+    },
+    {
+      "rank": 3,
+      "name": "Shanghai Stock Exchange",
+      "country": "China",
+      "local_timezone": "Asia/Shanghai",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:30",
+          "local_close": "11:30",
+          "utc_open_standard": "01:30",
+          "utc_close_standard": "03:30"
+        },
+        {
+          "local_open": "13:00",
+          "local_close": "15:00",
+          "utc_open_standard": "05:00",
+          "utc_close_standard": "07:00"
+        }
+      ],
+      "city": "Shanghai"
+    },
+    {
+      "rank": 4,
+      "name": "Tokyo Stock Exchange",
+      "country": "Japan",
+      "local_timezone": "Asia/Tokyo",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "11:30",
+          "utc_open_standard": "00:00",
+          "utc_close_standard": "02:30"
+        },
+        {
+          "local_open": "12:30",
+          "local_close": "15:00",
+          "utc_open_standard": "03:30",
+          "utc_close_standard": "06:00"
+        }
+      ],
+      "city": "Tokyo"
+    },
+    {
+      "rank": 5,
+      "name": "Euronext",
+      "country": "Europe",
+      "local_timezone": "Europe/Paris",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "17:30",
+          "utc_open_standard": "08:00",
+          "utc_close_standard": "16:30"
+        }
+      ],
+      "city": "Amsterdam"
+    },
+    {
+      "rank": 6,
+      "name": "Hong Kong Stock Exchange",
+      "country": "Hong Kong",
+      "local_timezone": "Asia/Hong_Kong",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:30",
+          "local_close": "12:00",
+          "utc_open_standard": "01:30",
+          "utc_close_standard": "04:00"
+        },
+        {
+          "local_open": "13:00",
+          "local_close": "16:00",
+          "utc_open_standard": "05:00",
+          "utc_close_standard": "08:00"
+        }
+      ],
+      "city": "Hong Kong"
+    },
+    {
+      "rank": 7,
+      "name": "BSE",
+      "country": "India",
+      "local_timezone": "Asia/Kolkata",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:15",
+          "local_close": "15:30",
+          "utc_open_standard": "03:45",
+          "utc_close_standard": "10:00"
+        }
+      ],
+      "city": "Mumbai"
+    },
+    {
+      "rank": 8,
+      "name": "NSE",
+      "country": "India",
+      "local_timezone": "Asia/Kolkata",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:15",
+          "local_close": "15:30",
+          "utc_open_standard": "03:45",
+          "utc_close_standard": "10:00"
+        }
+      ],
+      "city": "Mumbai"
+    },
+    {
+      "rank": 9,
+      "name": "Shenzhen Stock Exchange",
+      "country": "China",
+      "local_timezone": "Asia/Shanghai",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:30",
+          "local_close": "11:30",
+          "utc_open_standard": "01:30",
+          "utc_close_standard": "03:30"
+        },
+        {
+          "local_open": "13:00",
+          "local_close": "15:00",
+          "utc_open_standard": "05:00",
+          "utc_close_standard": "07:00"
+        }
+      ],
+      "city": "Shenzhen"
+    },
+    {
+      "rank": 10,
+      "name": "Toronto Stock Exchange",
+      "country": "Canada",
+      "local_timezone": "America/Toronto",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:30",
+          "local_close": "16:00",
+          "utc_open_standard": "14:30",
+          "utc_close_standard": "21:00"
+        }
+      ],
+      "city": "Toronto"
+    },
+    {
+      "rank": 11,
+      "name": "London Stock Exchange",
+      "country": "UK",
+      "local_timezone": "Europe/London",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "08:00",
+          "local_close": "16:30",
+          "utc_open_standard": "08:00",
+          "utc_close_standard": "16:30"
+        }
+      ],
+      "city": "London"
+    },
+    {
+      "rank": 12,
+      "name": "Korea Exchange",
+      "country": "South Korea",
+      "local_timezone": "Asia/Seoul",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "15:30",
+          "utc_open_standard": "00:00",
+          "utc_close_standard": "06:30"
+        }
+      ],
+      "city": "Seoul"
+    },
+    {
+      "rank": 13,
+      "name": "Taiwan Stock Exchange",
+      "country": "Taiwan",
+      "local_timezone": "Asia/Taipei",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "13:30",
+          "utc_open_standard": "01:00",
+          "utc_close_standard": "05:30"
+        }
+      ],
+      "city": "Taipei"
+    },
+    {
+      "rank": 14,
+      "name": "Deutsche Boerse (Xetra)",
+      "country": "Germany",
+      "local_timezone": "Europe/Berlin",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "17:30",
+          "utc_open_standard": "08:00",
+          "utc_close_standard": "16:30"
+        }
+      ],
+      "city": "Frankfurt"
+    },
+    {
+      "rank": 15,
+      "name": "Saudi Exchange (Tadawul)",
+      "country": "Saudi Arabia",
+      "local_timezone": "Asia/Riyadh",
+      "trading_days": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "sessions": [
+        {
+          "local_open": "10:00",
+          "local_close": "15:00",
+          "utc_open_standard": "07:00",
+          "utc_close_standard": "12:00"
+        }
+      ],
+      "city": "Riyadh"
+    },
+    {
+      "rank": 16,
+      "name": "SIX Swiss Exchange",
+      "country": "Switzerland",
+      "local_timezone": "Europe/Zurich",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "17:30",
+          "utc_open_standard": "08:00",
+          "utc_close_standard": "16:30"
+        }
+      ],
+      "city": "Zurich"
+    },
+    {
+      "rank": 17,
+      "name": "ASX",
+      "country": "Australia",
+      "local_timezone": "Australia/Sydney",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "10:00",
+          "local_close": "16:00",
+          "utc_open_standard": "00:00",
+          "utc_close_standard": "06:00"
+        }
+      ],
+      "city": "Sydney"
+    },
+    {
+      "rank": 18,
+      "name": "Nasdaq Nordic & Baltic",
+      "country": "Nordic/Baltic Europe",
+      "local_timezone": "Europe/Stockholm",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "10:00",
+          "local_close": "18:30",
+          "utc_open_standard": "09:00",
+          "utc_close_standard": "17:30"
+        }
+      ],
+      "city": "Stockholm"
+    },
+    {
+      "rank": 19,
+      "name": "Johannesburg Stock Exchange",
+      "country": "South Africa",
+      "local_timezone": "Africa/Johannesburg",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "09:00",
+          "local_close": "16:50",
+          "utc_open_standard": "07:00",
+          "utc_close_standard": "14:50"
+        }
+      ],
+      "city": "Johannesburg"
+    },
+    {
+      "rank": 20,
+      "name": "B3 (Brasil Bolsa Balcao)",
+      "country": "Brazil",
+      "local_timezone": "America/Sao_Paulo",
+      "trading_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "sessions": [
+        {
+          "local_open": "10:00",
+          "local_close": "17:00",
+          "utc_open_standard": "13:00",
+          "utc_close_standard": "20:00"
+        }
+      ],
+      "city": "São Paulo"
+    }
+  ]
+}
