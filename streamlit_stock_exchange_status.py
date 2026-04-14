@@ -1,10 +1,21 @@
-import subprocess
+import subprocess, sys, os
 import streamlit as st
 
-installed = subprocess.check_output(["pip", "list"]).decode()
+# Check packages in the ACTUAL Python environment running this script
+installed = subprocess.check_output([sys.executable, "-m", "pip", "list"]).decode()
+st.text(f"Python executable: {sys.executable}")
 st.text("Installed packages:")
 st.code(installed)
-st.stop()  # Stop here so the rest of the app doesn't crash
+
+# Also check if requirements.txt is even visible to the app
+req_path = os.path.join(os.path.dirname(__file__), "requirements.txt")
+st.text(f"requirements.txt path: {req_path}")
+st.text(f"requirements.txt exists: {os.path.exists(req_path)}")
+if os.path.exists(req_path):
+    with open(req_path) as f:
+        st.code(f.read())
+
+st.stop()
 
 import json
 from datetime import datetime, time
