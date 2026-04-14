@@ -1,20 +1,4 @@
-import subprocess, sys, os
 import streamlit as st
-
-# List ALL files actually present in the cloned repo
-repo_path = "/mount/src/stock-exchange-status"
-st.text("Files in cloned repo:")
-for root, dirs, files in os.walk(repo_path):
-    # Skip hidden directories like .git
-    dirs[:] = [d for d in dirs if not d.startswith('.')]
-    level = root.replace(repo_path, '').count(os.sep)
-    indent = '  ' * level
-    st.text(f"{indent}{os.path.basename(root)}/")
-    for f in files:
-        st.text(f"{'  ' * (level+1)}{f}")
-
-st.stop()
-
 import json
 from datetime import datetime, time
 from pathlib import Path
