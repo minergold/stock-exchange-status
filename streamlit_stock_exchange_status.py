@@ -1,4 +1,11 @@
+import subprocess
 import streamlit as st
+
+installed = subprocess.check_output(["pip", "list"]).decode()
+st.text("Installed packages:")
+st.code(installed)
+st.stop()  # Stop here so the rest of the app doesn't crash
+
 import json
 from datetime import datetime, time
 from pathlib import Path
