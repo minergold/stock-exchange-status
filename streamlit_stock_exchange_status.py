@@ -1,19 +1,17 @@
 import subprocess, sys, os
 import streamlit as st
 
-# Check packages in the ACTUAL Python environment running this script
-installed = subprocess.check_output([sys.executable, "-m", "pip", "list"]).decode()
-st.text(f"Python executable: {sys.executable}")
-st.text("Installed packages:")
-st.code(installed)
-
-# Also check if requirements.txt is even visible to the app
-req_path = os.path.join(os.path.dirname(__file__), "requirements.txt")
-st.text(f"requirements.txt path: {req_path}")
-st.text(f"requirements.txt exists: {os.path.exists(req_path)}")
-if os.path.exists(req_path):
-    with open(req_path) as f:
-        st.code(f.read())
+# List ALL files actually present in the cloned repo
+repo_path = "/mount/src/stock-exchange-status"
+st.text("Files in cloned repo:")
+for root, dirs, files in os.walk(repo_path):
+    # Skip hidden directories like .git
+    dirs[:] = [d for d in dirs if not d.startswith('.')]
+    level = root.replace(repo_path, '').count(os.sep)
+    indent = '  ' * level
+    st.text(f"{indent}{os.path.basename(root)}/")
+    for f in files:
+        st.text(f"{'  ' * (level+1)}{f}")
 
 st.stop()
 
